@@ -21,7 +21,7 @@ class Coin:
             currFlips.append(self.flip())
         hCnt = currFlips.count('H') 
         tCnt = currFlips.count('T')
-        return f"H:{hCnt}, T:{tCnt}, Current State:{self.currentState}", currFlips
+        return (hCnt, tCnt), currFlips
 
     # Return a representation of the current state.
     def __repr__(self) -> str:
